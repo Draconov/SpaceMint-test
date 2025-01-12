@@ -1,0 +1,2 @@
+# SpaceMint test
+ empty
