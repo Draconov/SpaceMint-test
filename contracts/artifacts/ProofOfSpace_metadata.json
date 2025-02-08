@@ -1,0 +1,225 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "deployer",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "rewards",
+						"type": "uint256"
+					}
+				],
+				"name": "ContractDeployed",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "miner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "valid",
+						"type": "bool"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "reward",
+						"type": "uint256"
+					}
+				],
+				"name": "ProofSubmitted",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "miner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "spaceSize",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "bytes32",
+						"name": "commitment",
+						"type": "bytes32"
+					}
+				],
+				"name": "SpaceCommitted",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_commitment",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_spaceSize",
+						"type": "uint256"
+					}
+				],
+				"name": "commitSpace",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getRewardBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "miners",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "commitment",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "spaceSize",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "hasProven",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "rewards",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_proof",
+						"type": "bytes32"
+					}
+				],
+				"name": "submitProof",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalRewards",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ProofOfSpace.sol": "ProofOfSpace"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ProofOfSpace.sol": {
+			"keccak256": "0x2f52d6335c52e9fa896d5e353ec3bf7aeeef614de2c3f0c94b442f18bf354143",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bf98d4e6b97055a0c702a9f4177d572a305bcac438aed43df3952d6f165b63ef",
+				"dweb:/ipfs/Qmdb12pg2TQLbUkFF1umFVkB7CbQV1wntuakdwxwLYKLsn"
+			]
+		}
+	},
+	"version": 1
+}

@@ -10,10 +10,16 @@ contract ProofOfSpace {
 
     mapping(address => Miner) public miners;
     mapping(address => uint256) public rewards;
-    uint256 public totalRewards = 1000 ether; // Reward pool
+    uint256 public totalRewards; // Reward pool
 
     event SpaceCommitted(address indexed miner, uint256 spaceSize, bytes32 commitment);
     event ProofSubmitted(address indexed miner, bool valid, uint256 reward);
+    event ContractDeployed(address indexed deployer, uint256 rewards);
+
+    constructor() {
+        totalRewards = 1000 ether;  // !!!!could be causing the issue!!!!
+        emit ContractDeployed(msg.sender, totalRewards);
+    }
 
     // Miner commits space
     function commitSpace(bytes32 _commitment, uint256 _spaceSize) external {
