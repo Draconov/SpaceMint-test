@@ -6,30 +6,6 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "deployer",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "rewards",
-						"type": "uint256"
-					}
-				],
-				"name": "ContractDeployed",
-				"type": "event"
-			},
-			{
 				"anonymous": false,
 				"inputs": [
 					{
@@ -213,11 +189,11 @@
 	},
 	"sources": {
 		"contracts/ProofOfSpace.sol": {
-			"keccak256": "0x5e3445b21d691549d4149d72fa50766f2b914e2e5fb12b475b38fb1120bf57e8",
+			"keccak256": "0x9236b51699500b7dd21dd000d313eca39b398edc263d62cbaeb095038508d302",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c03f207f7a8b250eccf8aef319faea729ca274da2f87d758b75bee3984640511",
-				"dweb:/ipfs/QmdznH4UKwHwS9CD9FyVvEXzjWQmjpNRctkDsKLpS4P5fs"
+				"bzz-raw://7fdc5e13eb23cebc91ce75d4ba9eb1799662aa0f446347c3f609c5866bf3a870",
+				"dweb:/ipfs/QmeBiK5SeiiyPckdyeimwRf6Gr42jL6wo2WF43ZwnkQwvj"
 			]
 		}
 	},
