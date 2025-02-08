@@ -17,7 +17,7 @@ contract ProofOfSpace {
     event ContractDeployed(address indexed deployer, uint256 rewards);
 
     constructor() {
-        totalRewards = 1000 ether;  // !!!!could be causing the issue!!!!
+        totalRewards = 500 ether;  // !!!!could be causing the issue!!!!
         emit ContractDeployed(msg.sender, totalRewards);
     }
 

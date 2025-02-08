@@ -213,11 +213,11 @@
 	},
 	"sources": {
 		"contracts/ProofOfSpace.sol": {
-			"keccak256": "0x2f52d6335c52e9fa896d5e353ec3bf7aeeef614de2c3f0c94b442f18bf354143",
+			"keccak256": "0x5e3445b21d691549d4149d72fa50766f2b914e2e5fb12b475b38fb1120bf57e8",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://bf98d4e6b97055a0c702a9f4177d572a305bcac438aed43df3952d6f165b63ef",
-				"dweb:/ipfs/Qmdb12pg2TQLbUkFF1umFVkB7CbQV1wntuakdwxwLYKLsn"
+				"bzz-raw://c03f207f7a8b250eccf8aef319faea729ca274da2f87d758b75bee3984640511",
+				"dweb:/ipfs/QmdznH4UKwHwS9CD9FyVvEXzjWQmjpNRctkDsKLpS4P5fs"
 			]
 		}
 	},
