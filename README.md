@@ -1,2 +1,2 @@
 # SpaceMint test
- empty
+Implementation of a PoSpace on Ethereum blockchain
